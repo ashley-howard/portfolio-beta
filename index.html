@@ -22,10 +22,10 @@
       <span class="border trans">
 
         <div id="typed-strings">
-          <p>Hi.</p>
-          <p>I'm Ashley.</p>
-          <p>I'm a front-end web developer, based in Trieste.</p>
-          <p>Why not check out my projects below?</p>
+          <p id="typed1">Hi.</p>
+          <p id="typed2">I'm Ashley.</p>
+          <p id="typed3">I'm a front-end web developer, based in Trieste.</p>
+          <p id="typed4">Why not check out my projects below?</p>
         </div>
 
         <span id="typed"></span>
@@ -46,7 +46,7 @@
     </p>
   </section>
 
-  
+
 
   <!-- A-KIN -->
   <div class="project-a-kin">
@@ -156,13 +156,13 @@
     </div>
     <div class="ptext">
       <span class="border">
-       
+
         <p>A to-do list which prioritises your most difficult tasks. Based on Mark Twain's quote: "If it’s your job to
           eat a frog, it’s best to do it first thing in the morning. And if it’s your job to eat two frogs, it’s best to
           eat the biggest one first."
         </p>
         <p>Try it out on the left! Or go to <a href="https://ashley.how/ribbit-app" target="_blank">/ribbit-app</a>.</p>
-        
+
 
       </span>
     </div>
@@ -170,25 +170,25 @@
 
 
   <div class="pimg2">
-      <div class="ptext">
-        <span class="border trans">
-          Image Two Text
-        </span>
-      </div>
+    <div class="ptext">
+      <span class="border trans">
+        Image Two Text
+      </span>
     </div>
-  
-    <section class="section section-dark">
-      <h2>Section Two</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque explicabo voluptatibus iusto culpa esse,
-        laborum itaque accusantium placeat. Numquam molestias quia odio illum error tempore ad veniam facilis optio
-        obcaecati doloribus dolores laboriosam, repellendus culpa! Tempora, eos numquam. Delectus at quisquam, nisi minus
-        voluptas facilis sint libero ut asperiores quo eligendi ullam quos natus rerum amet reiciendis expedita temporibus
-        recusandae sit. Explicabo sunt omnis sapiente! Hic animi laborum porro exercitationem consequuntur possimus
-        facilis, rerum ratione aperiam commodi est, iure perferendis veritatis maiores aliquam sint, corporis amet
-        voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
-      </p>
-    </section>
+  </div>
+
+  <section class="section section-dark">
+    <h2 id="sect2">Section Two</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque explicabo voluptatibus iusto culpa esse,
+      laborum itaque accusantium placeat. Numquam molestias quia odio illum error tempore ad veniam facilis optio
+      obcaecati doloribus dolores laboriosam, repellendus culpa! Tempora, eos numquam. Delectus at quisquam, nisi minus
+      voluptas facilis sint libero ut asperiores quo eligendi ullam quos natus rerum amet reiciendis expedita temporibus
+      recusandae sit. Explicabo sunt omnis sapiente! Hic animi laborum porro exercitationem consequuntur possimus
+      facilis, rerum ratione aperiam commodi est, iure perferendis veritatis maiores aliquam sint, corporis amet
+      voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
+    </p>
+  </section>
 
 
 
@@ -197,7 +197,7 @@
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-4">
-          Switch to Italian
+          <button onclick="changeLanguage()" id="languageBtn" class="btn">Italiano</button>
         </div>
         <div class="col-4">
           <span class="text-center">
@@ -215,7 +215,9 @@
 
   <script src="https://SortableJS.github.io/Sortable/Sortable.js"></script>
   <script src="https://ashley.how/ribbit-app/scripts/index.js"></script>
+  <script id="language" src="scripts/language.js"></script>
   <script src="scripts/index.js"></script>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
     integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
