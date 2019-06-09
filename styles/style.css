@@ -8,7 +8,7 @@ body, html {
     color: #666;
 }
 
-.pimg1, .pimg2, .project-a-kin {
+.pimg1, .pimg2, .project-a-kin, .project-ribbit {
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -34,6 +34,11 @@ body, html {
 .project-a-kin{
     background-image: url("../img/drew.gif");
     min-height: 100%;
+}
+
+.project-ribbit{
+    
+    min-height: 400px;
 }
 
 .section {
@@ -74,6 +79,36 @@ body, html {
 
 .project-a-kin .ptext a{
     color: #fff;
+    text-decoration: underline;
+}
+
+ .project-ribbit {
+    position: relative;
+    opacity: 1;
+    background-position: 10% 50%;
+    background-size: initial;
+    min-height: 470px;
+}
+
+.project-ribbit .ptext {
+    position: absolute;
+    top: 22%;
+    right: 12%;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+}
+
+.project-ribbit .ptext p {
+    font-size: 17px;
+    
+}
+
+.project-ribbit .ptext a{
+    color: #44b444;
+    padding: 0;
+    font-family: 'Satisfy', cursive;
 }
 
 .ptext .border {
@@ -84,10 +119,11 @@ body, html {
 }
 
 .project-a-kin .ptext .border {
-     background-color: #fff5f545;
+     background-color: #0500008f;
      color: #000;
      padding: 20px;
  }
+
 
 .ptext .border.trans{
     background-color: transparent;
@@ -100,4 +136,10 @@ footer {
 .fab, .fas {
     font-size: 21px;
     color: #666;
+}
+
+.row.main {
+    justify-content: end;
+    margin-left: 170px;
+    margin-top: 65px;
 }

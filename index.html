@@ -8,6 +8,8 @@
     integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
   <script src="https://kit.fontawesome.com/e3fcc7f070.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="https://ashley.how/ribbit-app/styles/style.css">
   <link rel="stylesheet" href="styles/style.css">
 
   <title>Hello, world!</title>
@@ -15,18 +17,18 @@
 
 <body>
 
-  <div class="pimg1">
+  <div class="pimg1" id="hero">
     <div class="ptext">
       <span class="border trans">
 
-          <div id="typed-strings">
-              <p>Hi.</p>
-              <p>I'm Ashley.</p>
-              <p>I'm a front-end web developer, based in Trieste.</p>
-              <p>Why not check out my projects below?</p>
-          </div>
-          
-          <span id="typed"></span>
+        <div id="typed-strings">
+          <p>Hi.</p>
+          <p>I'm Ashley.</p>
+          <p>I'm a front-end web developer, based in Trieste.</p>
+          <p>Why not check out my projects below?</p>
+        </div>
+
+        <span id="typed"></span>
       </span>
     </div>
   </div>
@@ -44,32 +46,15 @@
     </p>
   </section>
 
-  <div class="pimg2">
-    <div class="ptext">
-      <span class="border trans">
-        Image Two Text
-      </span>
-    </div>
-  </div>
-
-  <section class="section section-dark">
-    <h2>Section Two</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque explicabo voluptatibus iusto culpa esse,
-      laborum itaque accusantium placeat. Numquam molestias quia odio illum error tempore ad veniam facilis optio
-      obcaecati doloribus dolores laboriosam, repellendus culpa! Tempora, eos numquam. Delectus at quisquam, nisi minus
-      voluptas facilis sint libero ut asperiores quo eligendi ullam quos natus rerum amet reiciendis expedita temporibus
-      recusandae sit. Explicabo sunt omnis sapiente! Hic animi laborum porro exercitationem consequuntur possimus
-      facilis, rerum ratione aperiam commodi est, iure perferendis veritatis maiores aliquam sint, corporis amet
-      voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
-    </p>
-  </section>
+  
 
   <!-- A-KIN -->
   <div class="project-a-kin">
     <div class="ptext">
       <span class="border">
         <a href="https://ashley.how/a-kin" target="_blank">A-KIN</a>
+        Musician
+
       </span>
     </div>
   </div>
@@ -86,6 +71,126 @@
       voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
     </p>
   </section>
+
+  <!-- Ribbit. -->
+  <div class="project-ribbit">
+    <div class="container-fluid">
+      <div class="row main">
+
+        <!-- 'Add' section -->
+        <div class="col-12 col-sm-4" id="add-section" style="display: block;">
+
+          <h2 class="logo text-center">Ribbit.</h2>
+
+          <span class="info-text">What do you need to do today?</span>
+          <br>
+          <input id="inputTask" type="text" name="task" placeholder="If you can imagine it, you can do it...">
+
+          <p id="addUpdate"></p>
+
+          <button onclick="addTask()" class="btn add-task" id="add-button">Add</button>
+          <button onclick="finishAddTask()" id="finish-add-button" class="btn">Next</button>
+
+        </div>
+
+        <!-- Order section -->
+        <div class="col-12 col-sm-4" id="order-section" style="display: none;">
+
+          <h2 class="logo text-center">Ribbit.</h2>
+
+          <span class="info-text">Drag the most difficult tasks to the top</span>
+
+          <ul id="simpleList" class="list-group">
+          </ul>
+
+          <br>
+          <button onclick="addDiv()" class="btn">Back</button>
+          <button onclick="doTasks()" class="btn">Next</button><br>
+        </div>
+
+        <!-- "Do" section -->
+        <div class="col-12 col-sm-4" id="do-section" style="display: none;">
+
+          <h2 class="logo text-center">Ribbit.</h2>
+
+          <p id="inspireText" class="info-text">First up</p>
+          <p id="focusTask"></p>
+
+          <div id="results">
+            <h3>Results</h3>
+            <p id="completed-tasks"></p>
+            <p id="skipped-tasks"></p>
+          </div>
+
+          <div id="doControls">
+            <div id="main-buttons">
+              <button onclick="changeScreen('order')" class="btn" id="back-button">Back</button>
+              <button onclick="finishedTask()" id="done-button" class="btn">Done</button>
+              <button onclick="skipTask()" id="skip-button" class="btn">Skip</button>
+            </div>
+
+            <button onclick="addAndReset()" id="add-more" class="btn">Start over</button>
+
+            <br><br>
+            <div class="progress">
+              <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Add tasks to get started
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="col-12" id="settings" style="display: none;">
+          <h2 class="logo text-center">Ribbit.</h2>
+
+          <input type="checkbox" id="dev-mode" name="dev" value="dev"> Dev Mode<br>
+          <input type="checkbox" id="dark-mode" name="dark" value="dark"> Dark Mode<br>
+          <br>
+          <button onclick="saveSettings()" id="save-button" class="btn">Save</button>
+          <button onclick="clearStorage()" id="clear-data" class="btn">Clear Data</button>
+
+          <p id="clearText"></p>
+        </div>
+      </div>
+    </div>
+    <div class="ptext">
+      <span class="border">
+       
+        <p>A to-do list which prioritises your most difficult tasks. Based on Mark Twain's quote: "If it’s your job to
+          eat a frog, it’s best to do it first thing in the morning. And if it’s your job to eat two frogs, it’s best to
+          eat the biggest one first."
+        </p>
+        <p>Try it out on the left! Or go to <a href="https://ashley.how/ribbit-app" target="_blank">/ribbit-app</a>.</p>
+        
+
+      </span>
+    </div>
+  </div>
+
+
+  <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">
+          Image Two Text
+        </span>
+      </div>
+    </div>
+  
+    <section class="section section-dark">
+      <h2>Section Two</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque explicabo voluptatibus iusto culpa esse,
+        laborum itaque accusantium placeat. Numquam molestias quia odio illum error tempore ad veniam facilis optio
+        obcaecati doloribus dolores laboriosam, repellendus culpa! Tempora, eos numquam. Delectus at quisquam, nisi minus
+        voluptas facilis sint libero ut asperiores quo eligendi ullam quos natus rerum amet reiciendis expedita temporibus
+        recusandae sit. Explicabo sunt omnis sapiente! Hic animi laborum porro exercitationem consequuntur possimus
+        facilis, rerum ratione aperiam commodi est, iure perferendis veritatis maiores aliquam sint, corporis amet
+        voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
+      </p>
+    </section>
+
+
 
   <footer>
 
@@ -106,12 +211,10 @@
       </div>
     </div>
 
-
-
-
   </footer>
 
-
+  <script src="https://SortableJS.github.io/Sortable/Sortable.js"></script>
+  <script src="https://ashley.how/ribbit-app/scripts/index.js"></script>
   <script src="scripts/index.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
