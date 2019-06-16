@@ -25,14 +25,19 @@
           <p id="typed1"></p>
           <p id="typed2"></p>
           <p id="typed3"></p>
-          <p id="typed4"></p>
         </div>
-
         <span id="typed"></span>
+
       </span>
     </div>
+
+
+
+    <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+
   </div>
 
+  <!--
   <section class="section section-light">
     <h2>Projects</h2>
     <p>
@@ -45,7 +50,7 @@
       voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
     </p>
   </section>
-
+-->
 
 
   <!-- A-KIN -->
@@ -59,6 +64,7 @@
     </div>
   </div>
 
+  <!--
   <section class="section section-dark">
     <h2>Section Three</h2>
     <p>
@@ -71,6 +77,7 @@
       voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
     </p>
   </section>
+  -->
 
   <!-- Ribbit. -->
   <div class="project-ribbit">
@@ -154,6 +161,7 @@
         </div>
       </div>
     </div>
+
     <div class="ptext">
       <span class="border">
 
@@ -172,38 +180,52 @@
   <div class="pimg2">
     <div class="ptext">
       <span class="border trans">
-        Image Two Text
+
       </span>
     </div>
   </div>
 
+  <!-- Services -->
   <section class="section section-dark">
     <h2 id="sect2"></h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque explicabo voluptatibus iusto culpa esse,
-      laborum itaque accusantium placeat. Numquam molestias quia odio illum error tempore ad veniam facilis optio
-      obcaecati doloribus dolores laboriosam, repellendus culpa! Tempora, eos numquam. Delectus at quisquam, nisi minus
-      voluptas facilis sint libero ut asperiores quo eligendi ullam quos natus rerum amet reiciendis expedita temporibus
-      recusandae sit. Explicabo sunt omnis sapiente! Hic animi laborum porro exercitationem consequuntur possimus
-      facilis, rerum ratione aperiam commodi est, iure perferendis veritatis maiores aliquam sint, corporis amet
-      voluptatem veniam nisi tempore similique dolor sit! Ad quis repudiandae illum porro voluptate.
-    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <i class="fab fa-html5"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id molestiae nostrum eum ipsa quidem
+            voluptatem accusamus voluptate minus quo aut maxime totam praesentium, asperiores quaerat fuga perspiciatis
+            vitae animi alias.</p>
+        </div>
+        <div class="col-sm">
+          <i class="fab fa-css3-alt"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id molestiae nostrum eum ipsa quidem
+            voluptatem accusamus voluptate minus quo aut maxime totam praesentium, asperiores quaerat fuga perspiciatis
+            vitae animi alias.</p>
+
+        </div>
+        <div class="col-sm">
+          <i class="fab fa-js-square"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id molestiae nostrum eum ipsa quidem
+            voluptatem accusamus voluptate minus quo aut maxime totam praesentium, asperiores quaerat fuga perspiciatis
+            vitae animi alias.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
 
 
 
   <footer>
-
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-4">
-          <button onclick="changeLanguage()" id="languageBtn" class="btn" value="en"></button>
+          <button onclick="changeLanguage()" id="languageBtn" class="btn btn-info" value="en" title="Change language"></button>
         </div>
         <div class="col-4">
           <span class="text-center">
-            <a href="https://github.ashley.how/" target="_blank"><i class="fab fa-github"></i></a>
-            <i class="far fa-envelope"></i>
+            <a href="https://github.ashley.how/" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+            <a href="mailto:contact@ashley.how" target="_blank" title="Contact me"><i class="far fa-comment"></i></a>
           </span>
         </div>
         <div class="col-4">
@@ -211,7 +233,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
   <script src="https://SortableJS.github.io/Sortable/Sortable.js"></script>
