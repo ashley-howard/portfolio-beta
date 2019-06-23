@@ -1,5 +1,6 @@
 var languageBtn = document.getElementById("languageBtn");
 var languageScript = document.getElementById("language");
+
 window.onload = function () {
   document.getElementById("hero").focus();
 };
@@ -21,16 +22,12 @@ var typed = new Typed('#typed', {
 function changeLanguage() {
   if (languageBtn.value === 'en') {
     languageBtn.value = 'it';
-    localStorage.setItem('language', languageBtn.value);
-    languageScript.src = 'scripts/italiano.js'
     languageBtn.innerHTML = 'English';
-    window.location.reload();
   }
   else {
     languageBtn.value = 'en';
-    localStorage.setItem('language', languageBtn.value);
-    languageScript.src = 'scripts/english.js'
     languageBtn.innerHTML = 'Italiano';
-    window.location.reload();
   }
+  localStorage.setItem('language', languageBtn.value);
+  location.reload();
 }
