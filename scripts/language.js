@@ -14,9 +14,9 @@ var sect2 = document.getElementById("sect2");
 function languageEN() {
     // Home
     languageBtn.innerHTML = `Italiano`
-    typed1.innerHTML = `Hi, I'm Ashley.`
-    typed2.innerHTML = `I'm a front-end web developer, based in Trieste.`
-    typed3.innerHTML = `Why not check out my projects below?`
+    typed1.innerHTML = `Hi there!`
+    typed2.innerHTML = `I'm Ash.`
+    typed3.innerHTML = `Why not check out some of my projects below?`
     scrollProjects.innerHTML = `Projects`
     akinDesc.innerHTML = `Musician`
     sect2.innerHTML = `Services`
