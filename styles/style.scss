@@ -57,10 +57,11 @@ $frog-green: #44b444;
 
 .pimg1 h2 {
     font-size: 1.5em;
+    margin-top: -10px;
 }
 
 .pimg1 .ptext {
-    top: 25%;
+    top: 20%;
     right: 13%;
     font-size: 48px;
     text-align: left;
@@ -68,10 +69,20 @@ $frog-green: #44b444;
     width: 55%;
 }
 
-.job-title {
-    font-size: 17px;
-    margin-bottom: -15px;
+.job-title, #area {
+    font-size: 15px;
     margin-left: 5px;
+    display: inherit;
+    padding: 5px;
+}
+
+.job-title{
+    color: white;
+    background-color: #9f9f9f;
+}
+
+span#typed {
+    font-size: 30px;
 }
 
 .pimg1 .border.trans {
