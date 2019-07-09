@@ -1,5 +1,6 @@
 var languageBtn = document.getElementById("languageBtn");
 var languageScript = document.getElementById("language");
+const menuIcon = document.getElementById("menu-icon");
 
 window.onload = function () {
   document.getElementById("hero").focus();
@@ -25,6 +26,7 @@ function openNav() {
   document.body.style.transition = "all 2s";
   filter.style.display = "block";
   filter.onclick = function () { closeNav() };
+  menuIcon.innerHTML = `<i class="fas fa-circle-notch"></i>`
 }
 
 function closeNav() {
@@ -32,6 +34,7 @@ function closeNav() {
   document.body.style.background = "#fff";
   document.body.style.transition = "all 2s";
   filter.style.display = "none";
+  menuIcon.innerHTML = `<i class="fab fa-creative-commons-nd"></i>`
 }
 
 function changeLanguage() {
