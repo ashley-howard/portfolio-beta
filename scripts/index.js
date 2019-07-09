@@ -19,6 +19,21 @@ var typed = new Typed('#typed', {
   typeSpeed: 50
 });
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.background = "#b6b6b6";
+  document.body.style.transition = "all 2s";
+  filter.style.display = "block";
+  filter.onclick = function () { closeNav() };
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.background = "#fff";
+  document.body.style.transition = "all 2s";
+  filter.style.display = "none";
+}
+
 function changeLanguage() {
   if (languageBtn.value === 'en') {
     languageBtn.value = 'it';

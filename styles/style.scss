@@ -221,3 +221,59 @@ h2#sect2 {
     background-color: #8bcee7;
     border: #8bcee7;
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fffffff2;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: .3s;
+   // font-family: 'open sans', sans-serif
+}
+
+.sidenav a:hover {
+    color: #65b7ff
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px
+}
+
+.container-nav {
+    position: fixed;
+    min-width: 100%;
+    text-align: right;
+    z-index: 1;
+}
+
+.container-nav span {
+    z-index: 2;
+}
+
+#filter {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0
+}
