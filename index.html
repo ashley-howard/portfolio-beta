@@ -20,17 +20,21 @@
   <div class="container container-nav">
     <div id="mySidenav" class="sidenav">
       <div class="links">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="./">Home</a>
-          <a href="#a-kin">Projects</a>
-          <a href="./about">About Me</a>
-          <a href="./contact">Contact</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./">Home</a>
+        <a href="#a-kin" onclick="closeNav()" id="link-proj"></a>
+        <a href="#" onclick="closeNav()" id="link-about"></a>
+        <a href="#" onclick="closeNav()" id="link-approach">Philosophy</a>
+        <a href="#contact" onclick="closeNav()" id="link-contact"></a>
       </div>
 
       <span class="email"><a href="mailto:me@ashley.how" class="email-link" target="_blank">me@ashley.how</a></span>
     </div>
 
-    <span id="menu-icon" style="font-size:28px;cursor:pointer" onclick="openNav()"><i class="fab fa-creative-commons-nd" title="Menu"></i></span>
+
+
+    <span id="menu-icon" style="font-size:28px;cursor:pointer" onclick="openNav()"><i class="fab fa-creative-commons-nd"
+        title="Menu"></i></span>
 
     <div id="filter"></div>
   </div>
@@ -41,6 +45,7 @@
 
         <span class="job-title">Front-end Web Developer</span>
         <span id="area"></span>
+
         <h2>Ashley Howard</h2>
 
         <div id="typed-strings">
@@ -95,6 +100,7 @@
       </span>
     </div>
   </div>
+
 
   <!--
   <section class="section section-dark">
@@ -224,30 +230,47 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <i class="fas fa-mobile"></i>
-          <h2>Responsive and mobile-friendly</h2>
-          <p>Putting mobile first. All the websites I create are tailored to fit nicely on any screen size, so you don't
-            miss anything.</p>
+            <i class="fas fa-pencil-alt"></i>
+          <h2>Style</h2>
+          <p>
+            Putting mobile first. All the websites I create are tailored to fit nicely on any screen size, so you don't
+            miss anything. Carefully handpicked typefaces to give some personality to your website.
+          </p>
         </div>
         <div class="col-sm">
-          <i class="fab fa-autoprefixer"></i>
-          <h2>Typography</h2>
-          <p>Carefully handpicked typefaces to give some personality to your website.</p>
+            <i class="fas fa-circle"></i>
+          <h2>Minimalism</h2>
+          <p>
+            I believe that through simplistic design, we can express as much as we need to.
+          </p>
 
         </div>
         <div class="col-sm">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-          <h2>Latest sofware?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id molestiae nostrum eum ipsa quidem
-            voluptatem accusamus voluptate minus quo aut maxime totam praesentium, asperiores quaerat fuga perspiciatis
-            vitae animi alias.</p>
+          <i class="fas fa-cog"></i>
+          <h2>Accessibility</h2>
+          <p>There are many different types of people who use the internet. With this in mind I use ARIA to make sure my
+            websites fit the necessary needs for the particular audience or consumer.</p>
         </div>
       </div>
     </div>
   </section>
 
+
+    <!-- Contact -->
+    <section class="section section-light contact">
+      <h2 id="contact">Contact</h2>
+  
+      <div class="container">
+        <form action="https://formspree.io/contact@ashley.how" method="post">
+          <div class="form-group"><label for="name">Your Name</label><input type="text" class="form-control item" id="name" name="name"></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" class="form-control item" id="email" name="email"></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" class="form-control item" id="subject" name="subject"></div>
+          <div class="form-group"><label for="message">Message</label><textarea class="form-control item" id="message" name="message"></textarea></div>
+          <div class="form-group"><button class="btn btn-outline-secondary btn-block btn-lg" type="submit">Send</button></div>
+          <input type="hidden" name="_next" value="contact-form-submitted">
+        </form>
+      </div>
+    </section>
 
 
 
