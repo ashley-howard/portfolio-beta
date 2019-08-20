@@ -25,6 +25,9 @@ html {
   font-size: 27px;
   color: #000; }
 
+.fa-sun {
+  color: #ffbc00 !important; }
+
 .project-a-kin .ptext {
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -53,7 +56,8 @@ html {
   width: 55%; }
 
 .job-title,
-#area {
+#area,
+#weather {
   font-size: 15px;
   margin-left: 5px;
   display: inherit;

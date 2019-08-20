@@ -34,6 +34,10 @@ $frog-green: #44b444;
     @extend %ptext;
 }
 
+.fa-sun {
+    color: #ffbc00 !important;
+}
+
 .project-a-kin .ptext {
     @extend %ptext;
     text-transform: uppercase;
@@ -70,7 +74,8 @@ $frog-green: #44b444;
 }
 
 .job-title,
-#area {
+#area,
+#weather {
     font-size: 15px;
     margin-left: 5px;
     display: inherit;
