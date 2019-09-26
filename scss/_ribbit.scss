@@ -1,0 +1,21 @@
+.project-ribbit {
+    @extend %parallax;
+    opacity: 1;
+    background-position: 10% 50%;
+    background-size: initial;
+    min-height: 470px;
+}
+.project-ribbit .ptext {
+    @extend %ptext;
+    top: 22%;
+    right: 12%;
+    width: 30%;
+}
+.project-ribbit .ptext p {
+    font-size: 17px;
+}
+.project-ribbit .ptext a {
+    color: $frog-green;
+    padding: 0;
+    font-family: Satisfy, cursive;
+}

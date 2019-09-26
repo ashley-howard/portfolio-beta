@@ -1,0 +1,19 @@
+.project-a-kin {
+    @extend %parallax;
+    background-image: url(../img/drew.gif);
+}
+.project-a-kin .ptext {
+    @extend %ptext;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    width: 100%;
+}
+.project-a-kin .ptext a {
+    color: #fff;
+    text-decoration: underline;
+}
+.project-a-kin .ptext .border {
+    background-color: #0500008f;
+    color: #000;
+    padding: 20px;
+}
