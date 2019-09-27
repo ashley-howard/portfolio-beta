@@ -40,11 +40,11 @@ function closeNav() {
 function changeLanguage() {
   if (languageBtn.value === 'en') {
     languageBtn.value = 'it';
-    languageBtn.innerHTML = 'English';
+    languageBtn.innerHTML = 'EN';
   }
   else {
     languageBtn.value = 'en';
-    languageBtn.innerHTML = 'Italiano';
+    languageBtn.innerHTML = 'IT';
   }
   localStorage.setItem('language', languageBtn.value);
   location.reload();

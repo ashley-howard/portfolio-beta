@@ -14,13 +14,13 @@ var linkContact = document.getElementById("link-contact");
 
 function languageEN() {
     // Button
-    languageBtn.innerHTML = `Italiano`
+    languageBtn.innerHTML = `EN`
     // Menu
     linkProj.innerHTML = `Projects`
     linkAbout.innerHTML = `About me`
     linkContact.innerHTML = `Contact`
     // Hero
-    area.innerHTML = `<i class="fas fa-map-marker-alt"></i> Italy`
+    area.innerHTML = `Italy`
     typed1.innerHTML = `Hi there!`
     typed2.innerHTML = `I'm Ash.`
     typed3.innerHTML = `Why not check out some of my projects below?`
@@ -32,13 +32,13 @@ function languageEN() {
 
 function languageIT() {
     // Button
-    languageBtn.innerHTML = `English`
+    languageBtn.innerHTML = `IT`
     // Menu
     linkProj.innerHTML = `Progetti`
     linkAbout.innerHTML = `Su di me`
     linkContact.innerHTML = `Contatti`
     // Hero
-    area.innerHTML = `<i class="fas fa-map-marker-alt"></i> Italia`
+    area.innerHTML = `Italia`
     typed1.innerHTML = `Ciao!`
     typed2.innerHTML = `Sono Ash.`
     typed3.innerHTML = `Dai uno sguardo ai progetti qui sotto!`

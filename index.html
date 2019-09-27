@@ -31,10 +31,13 @@
       <span class="email"><a href="mailto:me@ashley.how" class="email-link" target="_blank">me@ashley.how</a></span>
     </div>
 
+    <div class="top-menu">
+      <span onclick="changeLanguage()" id="languageBtn" value="en" title="Change language"></span>
 
+      <span id="menu-icon" style="font-size:28px;cursor:pointer" onclick="openNav()"><i
+          class="fab fa-creative-commons-nd" title="Menu"></i></span>
+    </div>
 
-    <span id="menu-icon" style="font-size:28px;cursor:pointer" onclick="openNav()"><i class="fab fa-creative-commons-nd"
-        title="Menu"></i></span>
 
     <div id="filter"></div>
   </div>
@@ -43,10 +46,19 @@
     <div class="ptext">
       <span class="border trans">
 
-        <span class="job-title">Front-end Web Developer</span>
+        <!-- <span class="job-title">Front-end Web Developer</span>
         <span id="area"></span>
-        <span id="weather"><i class="fas fa-sun"></i> 17c</span>
+         <span id="weather"><i class="fas fa-sun"></i> 17c</span> -->
+        <!-- <div class="weather"><i id="weather-icon"></i><span id="weather-temp" onclick="changeUnit()"></span></div> --> 
 
+        <div class="info-bar">
+          <div class="info-bar__item job-title">Web Developer</div>
+          <div class="info-bar__item location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span id="area"></span>
+          </div>
+          <div class="info-bar__item weather"><i id="weather-icon" class="fas fa-cloud" aria-hidden="true"></i><span id="weather-temp">16°</span></div>
+          <!-- <span onclick="findWeatherDetails()">Update</span> -->
+      </div>
+        
         <h2>Ashley Howard</h2>
 
         <div id="typed-strings">
@@ -59,10 +71,6 @@
       </span>
 
       <br>
-    </div>
-
-    <div>
-
     </div>
 
 
@@ -231,7 +239,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-            <i class="fas fa-pencil-alt"></i>
+          <i class="fas fa-pencil-alt"></i>
           <h2>Style</h2>
           <p>
             Putting mobile first. All the websites I create are tailored to fit nicely on any screen size, so you don't
@@ -239,7 +247,7 @@
           </p>
         </div>
         <div class="col-sm">
-            <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
           <h2>Minimalism</h2>
           <p>
             I believe that through simplistic design, we can express as much as we need to.
@@ -257,39 +265,47 @@
   </section>
 
 
-    <!-- Contact -->
-    <section class="section section-light contact">
-      <h2 id="contact">Contact</h2>
-  
-      <div class="container">
-        <form action="https://formspree.io/contact@ashley.how" method="post">
-          <div class="form-group"><label for="name">Your Name</label><input type="text" class="form-control item" id="name" name="name"></div>
-          <div class="form-group"><label for="email">Email</label><input type="email" class="form-control item" id="email" name="email"></div>
-          <div class="form-group"><label for="subject">Subject</label><input type="text" class="form-control item" id="subject" name="subject"></div>
-          <div class="form-group"><label for="message">Message</label><textarea class="form-control item" id="message" name="message"></textarea></div>
-          <div class="form-group"><button class="btn btn-outline-secondary btn-block btn-lg" type="submit">Send</button></div>
-          <input type="hidden" name="_next" value="contact-form-submitted">
-        </form>
-      </div>
-    </section>
+  <!-- Contact -->
+  <section class="section section-light contact">
+    <h2 id="contact">Contact</h2>
+
+    <div class="container">
+      <form action="https://formspree.io/contact@ashley.how" method="post">
+        <div class="form-group"><label for="name">Your Name</label><input type="text" class="form-control item"
+            id="name" name="name"></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" class="form-control item" id="email"
+            name="email"></div>
+        <div class="form-group"><label for="subject">Subject</label><input type="text" class="form-control item"
+            id="subject" name="subject"></div>
+        <div class="form-group"><label for="message">Message</label><textarea class="form-control item" id="message"
+            name="message"></textarea></div>
+        <div class="form-group"><button class="btn btn-outline-secondary btn-block btn-lg" type="submit">Send</button>
+        </div>
+        <input type="hidden" name="_next" value="contact-form-submitted">
+      </form>
+    </div>
+  </section>
 
 
 
   <footer>
     <div class="container-fluid text-center">
       <div class="row">
-        <div class="col-4">
-          <button onclick="changeLanguage()" id="languageBtn" class="btn btn-info" value="en"
-            title="Change language"></button>
+        <div class="email col-4">
+          <a href="mailto:contact@ashley.how" target="_blank">contact@ashley.how</a>
         </div>
-        <div class="col-4">
+        <div class="social col-4">
           <span class="text-center">
-            <a href="https://github.ashley.how/" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-            <a href="mailto:contact@ashley.how" target="_blank" title="Contact me"><i class="far fa-comment"></i></a>
+            <a href="https://www.facebook.com/ashoward0" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/shleyhoward" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/ashley-howard" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
           </span>
         </div>
-        <div class="col-4">
-          <span>Ashley Howard © 2019</span>
+        <div class="copyright col-4">
+          <span>© Ashley Howard
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script></span>
         </div>
       </div>
     </div>
@@ -298,6 +314,7 @@
   <script src="https://SortableJS.github.io/Sortable/Sortable.js"></script>
   <script src="https://ashley.how/ribbit-app/scripts/index.js"></script>
   <script id="language" src="scripts/language.js"></script>
+  <script src="scripts/weather.js"></script>
   <script src="scripts/index.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

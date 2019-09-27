@@ -1,3 +1,167 @@
+.pimg1, .pimg2, .project-a-kin, .project-ribbit {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.ptext, .project-a-kin .ptext, .project-ribbit .ptext {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  text-align: center;
+  font-size: 27px;
+  color: #000;
+}
+
+.ptext .border {
+  color: #000;
+  padding: 20px;
+  border: 0 !important;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+.fa-sun {
+  color: #ffbc00 !important;
+}
+
+.pimg1 {
+  background-image: url(../img/portrait.jpg);
+  background-position: bottom 50% left 100px;
+  background-size: 23%;
+}
+
+.pimg1 h2 {
+  font-size: 1.5em;
+  margin-top: -10px;
+}
+
+.pimg1 .ptext {
+  top: 20%;
+  right: 13%;
+  font-size: 48px;
+  text-align: left;
+  line-height: 1em;
+  width: 55%;
+}
+
+.info-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.info-bar__item {
+  margin-right: 10px;
+}
+
+.info-bar * {
+  padding: 0 4px;
+}
+
+.job-title {
+  color: white;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+42,7db9e8+100 */
+  background: #1e5799;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#1e5799), color-stop(42%, #2989d8), to(#7db9e8));
+  background: linear-gradient(to right, #1e5799 0%, #2989d8 42%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
+  /* IE6-9 */
+}
+
+/* Weather Icons */
+.fa-sun,
+.fa-bolt {
+  color: #ffbc00;
+}
+
+.fa-cloud,
+.fa-snowflake,
+.fa-smog {
+  color: #dbdbdb;
+}
+
+.fa-cloud-rain {
+  color: #9cc4d7;
+}
+
+span#typed {
+  font-size: 30px;
+}
+
+.pimg1 .border.trans {
+  padding: 0;
+}
+
+.pimg2 {
+  background-image: url(../img/cell.jpg);
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.services .fab,
+.services .fas,
+.services .fas {
+  font-size: 90px;
+}
+
+.fa-map-marker-alt {
+  color: #8bb5e5;
+}
+
+.row.main {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-left: 170px;
+  margin-top: 65px;
+}
+
+h2#sect2 {
+  font-size: 4em;
+  border-bottom: 2px solid #ffffff8c;
+}
+
+.scroll-arrow {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.fa-chevron-down {
+  color: #000;
+  font-size: 25px;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -89,38 +253,8 @@
           animation: fa-spin 2s infinite linear;
 }
 
-body,
-html {
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-weight: 400;
-  line-height: 1.8em;
-  color: #666;
-}
-
-.pimg1, .pimg2, .project-a-kin, .project-ribbit {
-  position: relative;
-  opacity: 0.8;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100%;
-}
-
-.ptext, .project-a-kin .ptext, .project-ribbit .ptext {
-  position: absolute;
-  top: 50%;
-  width: 50%;
-  text-align: center;
-  font-size: 27px;
-  color: #000;
-}
-
-.fa-sun {
-  color: #ffbc00 !important;
+.project-a-kin {
+  background-image: url(../img/drew.gif);
 }
 
 .project-a-kin .ptext {
@@ -129,75 +263,15 @@ html {
   width: 100%;
 }
 
-.project-ribbit .ptext {
-  top: 22%;
-  right: 12%;
-  width: 30%;
-}
-
-.pimg1 {
-  background-image: url(../img/portrait.jpg);
-  background-position: bottom 50% left 100px;
-  background-size: 23%;
-}
-
-.pimg1 h2 {
-  font-size: 1.5em;
-  margin-top: -10px;
-}
-
-.pimg1 .ptext {
-  top: 20%;
-  right: 13%;
-  font-size: 48px;
-  text-align: left;
-  line-height: 1em;
-  width: 55%;
-}
-
-.job-title,
-#area,
-#weather {
-  font-size: 15px;
-  margin-left: 5px;
-  display: inherit;
-  padding: 5px;
-}
-
-.job-title {
-  color: white;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+42,7db9e8+100 */
-  background: #1e5799;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#1e5799), color-stop(42%, #2989d8), to(#7db9e8));
-  background: linear-gradient(to right, #1e5799 0%, #2989d8 42%, #7db9e8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
-  /* IE6-9 */
-}
-
-span#typed {
-  font-size: 30px;
-}
-
-.pimg1 .border.trans {
-  padding: 0;
-}
-
-.pimg2 {
-  background-image: url(../img/cell.jpg);
-  min-height: 400px;
-}
-
-.project-a-kin {
-  background-image: url(../img/drew.gif);
-}
-
 .project-a-kin .ptext a {
   color: #fff;
   text-decoration: underline;
+}
+
+.project-a-kin .ptext .border {
+  background-color: #0500008f;
+  color: #000;
+  padding: 20px;
 }
 
 .project-ribbit {
@@ -205,6 +279,12 @@ span#typed {
   background-position: 10% 50%;
   background-size: initial;
   min-height: 470px;
+}
+
+.project-ribbit .ptext {
+  top: 22%;
+  right: 12%;
+  width: 30%;
 }
 
 .project-ribbit .ptext p {
@@ -217,43 +297,39 @@ span#typed {
   font-family: Satisfy, cursive;
 }
 
-.section {
-  text-align: center;
-  padding: 50px 80px;
-}
-
-.section-light {
-  background-color: #f4f4f4;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
   color: #666;
 }
 
-.section-dark {
-  background-color: #282e34;
-  color: #ddd;
+.fab,
+.far,
+.fas {
+  font-size: 21px;
+}
+
+.top-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#languageBtn {
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+footer {
+  padding: 5px;
 }
 
 footer .container-fluid {
   padding-top: 0;
-}
-
-.ptext .border {
-  color: #000;
-  padding: 20px;
-  border: 0 !important;
-}
-
-.project-a-kin .ptext .border {
-  background-color: #0500008f;
-  color: #000;
-  padding: 20px;
-}
-
-.ptext .border.trans {
-  background-color: transparent;
-}
-
-footer {
-  padding: 10px;
 }
 
 footer .row {
@@ -262,51 +338,13 @@ footer .row {
           align-items: center;
 }
 
-.services .fab,
-.services .fas,
-.services .fas {
-  font-size: 90px;
+footer * {
+  color: #898989;
 }
 
-.fab,
-.far,
-.fas {
-  font-size: 21px;
-  color: #666;
-}
-
-.fa-map-marker-alt {
-  color: #8bb5e5;
-}
-
-.row.main {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin-left: 170px;
-  margin-top: 65px;
-}
-
-h2#sect2 {
-  font-size: 4em;
-  border-bottom: 2px solid #ffffff8c;
-}
-
-.scroll-arrow {
-  bottom: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.fa-chevron-down {
-  color: #000;
-  font-size: 25px;
-}
-
-#languageBtn {
-  background-color: #8bcee7;
-  border: #8bcee7;
+.social * {
+  padding: 0 5px;
+  font-size: 16px;
 }
 
 .contact form {
