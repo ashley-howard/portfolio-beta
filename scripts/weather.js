@@ -3,6 +3,7 @@ var weatherUnit = "&units=metric";
 let weatherLocation = 'Trieste';
 let weatherIcon = document.getElementById("weather-icon");
 let temperature = document.getElementById("weather-temp");
+const weatherDiv = document.getElementById("weather-div");
 
 function changeUnit() {
     if (weatherUnit === "&units=metric") {
@@ -28,16 +29,19 @@ if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
     setTimeout(function () {
         localStorage.setItem('weatherIcon', weatherIcon.className); // set icon
         localStorage.setItem('weatherTemp', temperature.innerText); // set temperature
+        localStorage.setItem('weatherDesc', weatherDiv.title); // set description
     }, 3000); // do this after 3 seconds
+
 }
 
 // don't reload weather, only retrieve icon and temp
 else {
     weatherIcon.className = localStorage.getItem('weatherIcon'); // retrieve icon 
     temperature.innerText = localStorage.getItem('weatherTemp'); // retrieve temp
+    weatherDiv.title = localStorage.getItem('weatherDesc'); // retrieve description
 
     // time remaining until next update
-    console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.")
+    // weatherDiv.title = Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.";
 }
 
 function findWeatherDetails() {
@@ -69,6 +73,8 @@ function theResponse(response) {
     else {
         console.log("Icon error");
     }
+
+    weatherDiv.title = jsonObject.weather[0].description;
 }
 
 function httpRequestAsync(url, callback) {
