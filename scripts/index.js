@@ -21,12 +21,13 @@ var typed = new Typed('#typed', {
 });
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.body.style.background = "#b6b6b6";
+  document.getElementById("mySidenav").style.width = "122px"; //250
+  //document.body.style.background = "#b6b6b6";
   document.body.style.transition = "all 2s";
   filter.style.display = "block";
   filter.onclick = function () { closeNav() };
-  //  menuIcon.style.visibility = "hidden";
+  menuIcon.style.visibility = "hidden";
+  // menuIcon.innerHTML = `<i class="fas fa-times"></i>`
 }
 
 function closeNav() {
@@ -34,8 +35,8 @@ function closeNav() {
   document.body.style.background = "#fff";
   document.body.style.transition = "all 2s";
   filter.style.display = "none";
-  // menuIcon.style.visibility = "visible";
-  // menuIcon.innerHTML = `<i class="fas fa-bars"></i>`
+  menuIcon.style.visibility = "visible";
+  menuIcon.innerHTML = `<i class="fas fa-bars"></i>`
 }
 
 function changeLanguage() {

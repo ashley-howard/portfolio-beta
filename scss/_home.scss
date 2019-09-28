@@ -131,14 +131,6 @@ span#typed {
     background-color: #282e34;
     color: #ddd;
 }
-
-.services .fab,
-.services .fas,
-.services .fas {
-    font-size: 90px;
-}
-
-
 .fa-map-marker-alt {
     color: #8bb5e5;
 }
@@ -164,4 +156,10 @@ h2#sect2 {
 .fa-chevron-down {
     color: #000;
     font-size: 25px;
+}
+
+.philosophy p {
+    margin-bottom: -10px;
+    line-height: 45px;
+    margin-top: 25px;
 }

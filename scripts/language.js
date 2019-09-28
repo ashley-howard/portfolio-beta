@@ -16,7 +16,6 @@ function languageEN() {
     languageBtn.innerHTML = `EN`
     // Menu
     linkProj.innerHTML = `Projects`
-    linkAbout.innerHTML = `About me`
     linkContact.innerHTML = `Contact`
     // Hero
     area.innerHTML = `Italy`
@@ -33,7 +32,6 @@ function languageIT() {
     languageBtn.innerHTML = `IT`
     // Menu
     linkProj.innerHTML = `Progetti`
-    linkAbout.innerHTML = `Su di me`
     linkContact.innerHTML = `Contatti`
     // Hero
     area.innerHTML = `Italia`
