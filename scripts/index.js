@@ -26,7 +26,7 @@ function openNav() {
   document.body.style.transition = "all 2s";
   filter.style.display = "block";
   filter.onclick = function () { closeNav() };
-  menuIcon.innerHTML = `<i class="fas fa-circle-notch"></i>`
+  //  menuIcon.style.visibility = "hidden";
 }
 
 function closeNav() {
@@ -34,7 +34,8 @@ function closeNav() {
   document.body.style.background = "#fff";
   document.body.style.transition = "all 2s";
   filter.style.display = "none";
-  menuIcon.innerHTML = `<i class="fab fa-creative-commons-nd"></i>`
+  // menuIcon.style.visibility = "visible";
+  // menuIcon.innerHTML = `<i class="fas fa-bars"></i>`
 }
 
 function changeLanguage() {

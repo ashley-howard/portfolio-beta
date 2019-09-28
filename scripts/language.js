@@ -6,7 +6,6 @@ var typed3 = document.getElementById("typed3");
 var area = document.getElementById("area");
 var scrollProjects = document.getElementById("scroll-projects");
 var akinDesc = document.getElementById("a-kin-desc");
-var sect2 = document.getElementById("sect2");
 var linkProj = document.getElementById("link-proj");
 var linkAbout = document.getElementById("link-about");
 var linkContact = document.getElementById("link-contact");
@@ -27,7 +26,6 @@ function languageEN() {
     // Projects
     scrollProjects.innerHTML = `Projects`
     akinDesc.innerHTML = `Musician`
-    sect2.innerHTML = `Approach`
 }
 
 function languageIT() {
@@ -45,5 +43,4 @@ function languageIT() {
     // Projects
     scrollProjects.innerHTML = `Progetti`
     akinDesc.innerHTML = `Musicista`
-    sect2.innerHTML = `Il mio approccio`
 }
