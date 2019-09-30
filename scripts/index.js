@@ -27,7 +27,6 @@ function openNav() {
   filter.style.display = "block";
   filter.onclick = function () { closeNav() };
   menuIcon.style.visibility = "hidden";
-  // menuIcon.innerHTML = `<i class="fas fa-times"></i>`
 }
 
 function closeNav() {
@@ -37,6 +36,7 @@ function closeNav() {
   filter.style.display = "none";
   menuIcon.style.visibility = "visible";
   menuIcon.innerHTML = `<i class="fas fa-bars"></i>`
+
 }
 
 function changeLanguage() {
