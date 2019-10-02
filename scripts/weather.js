@@ -1,5 +1,5 @@
 const appKey = "6a42348f3f2db5f744296408f0807ef2";
-var weatherUnit = "&units=metric";
+var weatherUnit = localStorage.getItem('weatherUnit') ? localStorage.getItem('weatherUnit') : "&units=metric";
 let weatherLocation = 'Trieste';
 let weatherIcon = document.getElementById("weather-icon");
 let temperature = document.getElementById("weather-temp");
@@ -8,12 +8,19 @@ const weatherDiv = document.getElementById("weather-div");
 function changeUnit() {
     if (weatherUnit === "&units=metric") {
         weatherUnit = "&units=imperial";
-     //   localStorage.clear();
     }
     else {
         weatherUnit = "&units=metric";
-     //   localStorage.clear();
     }
+
+    //localStorage.removeItem('weatherTemp');
+    localStorage.clear(); 
+    localStorage.setItem('weatherUnit', weatherUnit);
+
+    setTimeout(function () {
+        location.reload()
+    }, 100); 
+
 }
 
 var api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation + "&appid=" + appKey + weatherUnit;
@@ -30,7 +37,7 @@ if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
         localStorage.setItem('weatherIcon', weatherIcon.className); // set icon
         localStorage.setItem('weatherTemp', temperature.innerText); // set temperature
         localStorage.setItem('weatherDesc', weatherDiv.title); // set description
-    }, 3000); // do this after 3 seconds
+    }, 100); //
 
 }
 
@@ -41,7 +48,7 @@ else {
     weatherDiv.title = localStorage.getItem('weatherDesc'); // retrieve description
 
     // time remaining until next update
-    // weatherDiv.title = Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.";
+    console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.");
 }
 
 function findWeatherDetails() {

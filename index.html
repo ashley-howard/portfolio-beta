@@ -22,21 +22,20 @@
       <div class="links">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
         <a href="./">Home</a>
-        <a href="projects.html" onclick="closeNav()" id="link-proj"></a>
-        <a href="contact.html" onclick="closeNav()" id="link-contact"></a>
+        <a href="projects.html" onclick="closeNav()" id="link-proj">Projects</a>
+        <a href="contact.html" onclick="closeNav()" id="link-contact">Contact</a>
       </div>
 
       <!-- <span class="email"><a href="mailto:me@ashley.how" class="email-link" target="_blank">me@ashley.how</a></span> -->
     </div>
 
     <div class="top-menu">
-      <span onclick="changeLanguage()" id="languageBtn" value="en" title="Change language"></span>
+      <!-- <span onclick="changeLanguage()" id="languageBtn" value="en" title="Change language"></span>
 
-      <span id="lightbulb" onclick="lights('on')" title="Lights off"><i class="fas fa-lightbulb"></i></span>
+      <span id="lightbulb" onclick="lights('on')" title="Lights off"><i class="fas fa-lightbulb"></i></span> -->
 
       <span id="menu-icon" onclick="openNav()"><i class="fas fa-bars" title="Menu"></i></span>
     </div>
-
 
     <div id="filter"></div>
   </div>
@@ -53,10 +52,10 @@
         <div class="info-bar">
           <div class="info-bar__item job-title">Web Developer</div>
           <div class="info-bar__item location">
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i><span id="area"></span>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i><span id="area">Italy</span>
           </div>
-          <div class="info-bar__item weather" id="weather-div">
-            <i id="weather-icon" class="fas fa-cloud" aria-hidden="true"></i><span id="weather-temp"></span>
+          <div class="info-bar__item weather" id="weather-div" onclick="changeUnit()">
+            <i id="weather-icon" aria-hidden="true"></i><span id="weather-temp"></span>
           </div>
 
         </div>
@@ -64,11 +63,13 @@
         <h2>Ashley Howard</h2>
 
         <div id="typed-strings">
-          <p id="typed1"></p>
-          <p id="typed2"></p>
-          <p id="typed3"></p>
+          <p id="typed1">Hi there!</p>
+          <p id="typed2">I'm Ash.</p>
+          <p id="typed3">Click here to see the first project.</p>
         </div>
-        <span id="typed"></span>
+        <a href="#a-kin">
+          <span id="typed"></span>
+        </a>
 
       </span>
 
@@ -76,12 +77,13 @@
     </div>
 
 
-
-    <div class="scroll-arrow">
-      <span id="scroll-projects"></span>
-      <br>
-      <i class="fas fa-chevron-down"></i>
-    </div>
+    <a href="#a-kin">
+      <div class="scroll-arrow">
+        <span id="scroll-projects"></span>
+        <br>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </a>
 
   </div>
 
@@ -106,7 +108,7 @@
     <div class="ptext">
       <span class="border">
         <a href="https://ashley.how/a-kin" target="_blank">A-KIN</a>
-        <span id="a-kin-desc"></span>
+        <span id="a-kin-desc">Musician</span>
 
       </span>
     </div>
@@ -282,9 +284,9 @@
 
   <script src="https://SortableJS.github.io/Sortable/Sortable.js"></script>
   <script src="https://ashley.how/ribbit-app/scripts/index.js"></script>
-  <script id="language" src="scripts/language.js"></script>
+  <!-- <script id="language" src="scripts/language.js"></script> -->
   <script src="scripts/weather.js"></script>
-  <script src="scripts/lights.js"></script>
+  <!-- <script src="scripts/lights.js"></script> -->
   <script src="scripts/index.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

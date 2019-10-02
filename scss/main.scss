@@ -4,6 +4,7 @@
 @import 'ribbit';
 @import 'contact';
 @import 'responsive';
+@import 'theme';
 
 body,
 html {
@@ -14,6 +15,18 @@ html {
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
+
+    .dark {
+        background-color: black;
+    }
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 // .fab,
