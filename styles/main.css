@@ -87,6 +87,10 @@
   font-size: 21px;
 }
 
+#weather-temp {
+  cursor: pointer;
+}
+
 /* Weather Icons */
 .fa-sun,
 .fa-bolt {

@@ -36,7 +36,7 @@ if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
     setTimeout(function () {
         localStorage.setItem('weatherIcon', weatherIcon.className); // set icon
         localStorage.setItem('weatherTemp', temperature.innerText); // set temperature
-        localStorage.setItem('weatherDesc', weatherDiv.title); // set description
+        localStorage.setItem('weatherDesc', weatherIcon.title); // set description
     }, 100); //
 
 }
@@ -45,7 +45,7 @@ if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
 else {
     weatherIcon.className = localStorage.getItem('weatherIcon'); // retrieve icon 
     temperature.innerText = localStorage.getItem('weatherTemp'); // retrieve temp
-    weatherDiv.title = localStorage.getItem('weatherDesc'); // retrieve description
+    weatherIcon.title = localStorage.getItem('weatherDesc'); // retrieve description
 
     // time remaining until next update
     console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.");
@@ -81,7 +81,7 @@ function theResponse(response) {
         console.log("Icon error");
     }
 
-    weatherDiv.title = jsonObject.weather[0].description;
+    weatherIcon.title = jsonObject.weather[0].description;
 }
 
 function httpRequestAsync(url, callback) {
